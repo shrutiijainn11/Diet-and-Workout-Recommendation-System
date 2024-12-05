@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Workouts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .workout-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(to right, #a78128, #fed574);
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+
+        .card .video-icon {
+            font-size: 2rem;
+            color: #ff7e5f;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .card .video-icon:hover {
+            color: #feb47b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animation-wrapper {
+            animation: fadeIn 1.5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container animation-wrapper">
+        <h2>Yoga Workouts: Strengthen, Stretch, and Relax</h2>
+
+        <div class="workout-card">
+            <!-- Yoga Basics Card -->
+            <div class="card">
+                <img src="static/yogabasics.webp" alt="Yoga Basics">
+                <h3>Yoga Basics</h3>
+                <p>This introductory yoga session is perfect for beginners. It covers foundational poses and breathing techniques.</p>
+                <a href="https://www.youtube.com/watch?v=v7AYKMP6rOE" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Vinyasa Flow Card -->
+            <div class="card">
+                <img src="static/vinyasa.jpg" alt="Vinyasa Flow">
+                <h3>Vinyasa Flow</h3>
+                <p>A dynamic style of yoga that links movement with breath, providing a fluid and invigorating full-body workout.</p>
+                <a href="https://youtu.be/P8uHMMmWMHQ?si=NyO6l7uk1uRgsfcW" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Yoga for Flexibility Card -->
+            <div class="card">
+                <img src="static/yogaflexibility.jpg" alt="Yoga for Flexibility">
+                <h3>Yoga for Flexibility</h3>
+                <p>This yoga routine focuses on increasing flexibility, perfect for loosening tight muscles and improving range of motion.</p>
+                <a href="https://youtu.be/ScxPABG7QJk?si=uyey9VNWZLVStmzc" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Morning Yoga Card -->
+            <div class="card">
+                <img src="static/yogamorning.webp" alt="Morning Yoga">
+                <h3>Morning Yoga Routine</h3>
+                <p>Start your day with a refreshing yoga flow to energize your body, stretch your muscles, and set a calm tone for the day.</p>
+                <a href="https://youtu.be/CM43AZaRXNw?si=WZRXf_Wvm66RhqIn" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Restorative Yoga Card -->
+            <div class="card">
+                <img src="static/yogarestorative.jpg" alt="Restorative Yoga">
+                <h3>Restorative Yoga</h3>
+                <p>This yoga practice is all about relaxation, helping to calm the mind and release stress with slow, deep stretches.</p>
+                <a href="https://youtu.be/ifH3uFL3-YU?si=2pAIF10lGt1cWP_e" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Yoga for Stress Relief Card -->
+            <div class="card">
+                <img src="static/yogastress.webp" alt="Yoga for Stress Relief">
+                <h3>Yoga for Stress Relief</h3>
+                <p>Practice calming yoga poses designed to reduce stress and promote mental clarity and relaxation.</p>
+                <a href="https://youtu.be/jsOqcwcy2mI?si=do8jG1wN8Ic4jzau" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Yoga for Core Card -->
+            <div class="card">
+                <img src="static/yogacore.jpg" alt="Yoga for Core">
+                <h3>Yoga for Core Strength</h3>
+                <p>This yoga session is focused on strengthening your core, with poses that target your abdominal muscles and lower back.</p>
+                <a href="https://youtu.be/QsJONlw7XUM?si=rIIv35NvynvPJL0k" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Yoga for Sleep Card -->
+            <div class="card">
+                <img src="static/yogasleep.avif" alt="Yoga for Sleep">
+                <h3>Yoga for Better Sleep</h3>
+                <p>This gentle yoga practice is designed to relax your body and calm your mind before bed, helping you sleep better.</p>
+                <a href="https://youtu.be/XDLgc_bry7g?si=gbTfIgliz8QXOgaA" target="_blank">Learn More</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
