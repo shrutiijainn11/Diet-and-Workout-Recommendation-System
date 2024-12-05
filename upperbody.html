@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper Body Workouts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .workout-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(to right, #a78128, #fed574);
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+
+        .card .video-icon {
+            font-size: 2rem;
+            color: #ff7e5f;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .card .video-icon:hover {
+            color: #feb47b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animation-wrapper {
+            animation: fadeIn 1.5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container animation-wrapper">
+        <h2>Upper Body Workouts: Complete Guide</h2>
+
+        <div class="workout-card">
+            <!-- Push Ups Card -->
+            <div class="card">
+                <img src="static/pushups.jpg" alt="Push Ups">
+                <h3>Push Ups</h3>
+                <p>Push-ups are great for building chest, shoulder, and triceps strength. No equipment needed, just your bodyweight.</p>
+                <a href="https://www.youtube.com/watch?v=IODxDxX7oi4" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Tricep Dips (Using a chair) -->
+            <div class="card">
+                <img src="static/tricepdips.jpg" alt="Tricep Dips">
+                <h3>Tricep Dips</h3>
+                <p>Use a sturdy chair or bench to perform tricep dips, targeting the triceps and shoulders without needing any weights.</p>
+                <a href="https://youtu.be/89_spgcdQlw?si=Ha1z9uNNjWC3wsWz" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Plank to Push Up -->
+            <div class="card">
+                <img src="static/plankpushup.webp" alt="Plank to Push Up">
+                <h3>Plank to Push Up</h3>
+                <p>This dynamic move combines a plank with a push-up, engaging your core and upper body at the same time.</p>
+                <a href="https://youtu.be/5hLOvx4KZxg?si=NKSjpNRXYfmRm2Ts" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Pike Push Ups -->
+            <div class="card">
+                <img src="static/pikepushup.webp" alt="Pike Push Ups">
+                <h3>Pike Push Ups</h3>
+                <p>Pike push-ups are a variation of the traditional push-up that emphasizes the shoulders. Perfect for home workouts!</p>
+                <a href="https://youtu.be/XckEEwa1BPI?si=fMIt6YyK2PIBKWO-" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Dumbbell Shoulder Press -->
+            <div class="card">
+                <img src="static/shoulderpress.jpg" alt="Dumbbell Shoulder Press">
+                <h3>Dumbbell Shoulder Press</h3>
+                <p>If you have dumbbells, this exercise targets your deltoids, triceps, and upper chest. Can be done seated or standing.</p>
+                <a href="https://www.youtube.com/watch?v=qEwKCR5JCog" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Bicep Curls (With Dumbbells) -->
+            <div class="card">
+                <img src="static/bicepcurl.avif" alt="Bicep Curls">
+                <h3>Bicep Curls</h3>
+                <p>Bicep curls can be done with dumbbells or even household items like water bottles, making it a great exercise for the arms.</p>
+                <a href="https://www.youtube.com/watch?v=ykJmrZ5v0Oo" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Push-Up with Shoulder Tap -->
+            <div class="card">
+                <img src="static/shouldertap.avif" alt="Push-Up with Shoulder Tap">
+                <h3>Push-Up Shoulder Tap</h3>
+                <p>This variation of the push-up targets your chest, shoulders, and core while adding a shoulder tap for extra challenge.</p>
+                <a href="https://youtu.be/EvtbNQBLHHM?si=cfWMbwa91kseK5BL" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Dumbbell Rows -->
+            <div class="card">
+                <img src="static/dumbbellrow.jpg" alt="Dumbbell Rows">
+                <h3>Dumbbell Rows</h3>
+                <p>Dumbbell rows target your upper back and biceps. You can use dumbbells or other household items as weights.</p>
+                <a href="https://youtu.be/6gvmcqr226U?si=s5rAlH3TiAvzoLTH" target="_blank">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
