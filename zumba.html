@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zumba Workouts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .workout-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(to right, #a78128, #fed574);
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+
+        .card .video-icon {
+            font-size: 2rem;
+            color: #ff7e5f;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .card .video-icon:hover {
+            color: #feb47b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animation-wrapper {
+            animation: fadeIn 1.5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container animation-wrapper">
+        <h2>Zumba Workouts: Dance Your Way to Fitness</h2>
+
+        <div class="workout-card">
+            <!-- Zumba Card 1 -->
+            <div class="card">
+                <img src="static/zumbabasics.jpg" alt="Zumba Basics">
+                <h3>Zumba Basics</h3>
+                <p>Learn the basic steps of Zumba with easy-to-follow routines. Great for beginners who want to get started with this fun workout!</p>
+                <a href="https://youtu.be/urSq82wdR24?si=WkoVaY2KabRdfVcN" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Zumba for Beginners Card -->
+            <div class="card">
+                <img src="static/zumbabeginners.avif" alt="Zumba for Beginners">
+                <h3>Zumba for Beginners</h3>
+                <p>Join this beginner Zumba session. Follow the instructor's moves and enjoy the upbeat music while burning calories!</p>
+                <a href="https://youtu.be/ka4tN6RJvgQ?si=jwVeLr9EPAUBW0_z" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Zumba Dance Party Card -->
+            <div class="card">
+                <img src="static/zumbadance.jpg" alt="Zumba Dance Party">
+                <h3>Zumba Dance Party</h3>
+                <p>Turn your living room into a dance floor with this fun Zumba Dance Party routine. Enjoy a mix of salsa, reggaeton, and more!</p>
+                <a href="https://youtu.be/G5TVypTNq5A?si=uFz62RUYop6OiUw3" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Zumba Toning Card -->
+            <div class="card">
+                <img src="static/zumbatoning.jpg" alt="Zumba Toning">
+                <h3>Zumba Toning</h3>
+                <p>This Zumba workout focuses on toning your body with light weights and dance moves to get your muscles firm and toned.</p>
+                <a href="https://youtu.be/x0JSSXtCro4?si=F3I9WbV6K-PD3qzx" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Zumba for Weight Loss Card -->
+            <div class="card">
+                <img src="static/zumbaweightloss.jpg" alt="Zumba for Weight Loss">
+                <h3>Zumba for Weight Loss</h3>
+                <p>This calorie-burning Zumba workout will help you burn fat and improve your endurance in a fun and energetic way.</p>
+                <a href="https://youtu.be/IsBR03WznCY?si=LxZfT7rEDI_Y9ahl" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Zumba Gold Card (Low Impact) -->
+            <div class="card">
+                <img src="static/zumbagold.jpg" alt="Zumba Gold">
+                <h3>Zumba Gold</h3>
+                <p>Zumba Gold is a low-impact, senior-friendly version of Zumba, offering a fun way to stay active without straining your body.</p>
+                <a href="https://youtu.be/SvJWWAWLuXQ?si=eBQRwTiKjsy_WWM7" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Zumba Sentao Card (Chair Workout) -->
+            <div class="card">
+                <img src="static/zumbasentao.jpg" alt="Zumba Sentao">
+                <h3>Zumba Sentao</h3>
+                <p>This Zumba workout incorporates a chair for stability and support, helping you tone and strengthen your body while dancing.</p>
+                <a href="https://youtu.be/6Fdug_fciGc?si=FpRY1yO0f_57vijQ" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Zumba Kids Card -->
+            <div class="card">
+                <img src="static/zumbakids.jpg" alt="Zumba Kids">
+                <h3>Zumba Kids</h3>
+                <p>This fun, kid-friendly Zumba routine is designed to keep kids moving, with simple dance moves and upbeat music.</p>
+                <a href="https://youtu.be/e_hut0aU5Iw?si=lvKzNL2rEJZVGSYb" target="_blank">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
