@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abs Workouts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .workout-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(to right, #a78128, #fed574);
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+
+        .card .video-icon {
+            font-size: 2rem;
+            color: #ff7e5f;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .card .video-icon:hover {
+            color: #feb47b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animation-wrapper {
+            animation: fadeIn 1.5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container animation-wrapper">
+        <h2>Abs Workouts: Strengthen Your Core</h2>
+
+        <div class="workout-card">
+            <!-- Crunches Card -->
+            <div class="card">
+                <img src="static/crunches.jpg" alt="Crunches">
+                <h3>Crunches</h3>
+                <p>Crunches are a classic exercise that target the upper abs and help strengthen your core.</p>
+                <a href="https://youtu.be/O0pIQ2UqeCY?si=VU30Or3geGQ-X534" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Leg Raises Card -->
+            <div class="card">
+                <img src="static/legraises.jpg" alt="Leg Raises">
+                <h3>Leg Raises</h3>
+                <p>This exercise targets the lower abs, working to tone and strengthen your entire core.</p>
+                <a href="https://www.youtube.com/watch?v=JB2oyawG9KI" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Bicycle Crunches Card -->
+            <div class="card">
+                <img src="static/bicyclecrunches.png" alt="Bicycle Crunches">
+                <h3>Bicycle Crunches</h3>
+                <p>Bicycle crunches target the obliques and the rectus abdominis, providing a great overall core workout.</p>
+                <a href="https://www.youtube.com/watch?v=9FGilxCbdz8" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Plank Card -->
+            <div class="card">
+                <img src="static/plank.jpg" alt="Plank">
+                <h3>Plank</h3>
+                <p>The plank is a simple yet effective core exercise that strengthens the entire abdominal area, back, and shoulders.</p>
+                <a href="https://www.youtube.com/watch?v=pSHjTRCQxIw" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Russian Twists Card -->
+            <div class="card">
+                <img src="static/russiantwists.jpg" alt="Russian Twists">
+                <h3>Russian Twists</h3>
+                <p>This rotational movement targets the obliques, helping to define the sides of your abdomen.</p>
+                <a href="https://www.youtube.com/watch?v=wkD8rjkodUI" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Mountain Climbers Card -->
+            <div class="card">
+                <img src="static/mountainclimbers.webp" alt="Mountain Climbers">
+                <h3>Mountain Climbers</h3>
+                <p>This dynamic, full-body exercise is excellent for engaging the core while providing a cardiovascular challenge.</p>
+                <a href="https://www.youtube.com/watch?v=nmwgirgXLYM" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Flutter Kicks Card -->
+            <div class="card">
+                <img src="static/flutterkicks.webp" alt="Flutter Kicks">
+                <h3>Flutter Kicks</h3>
+                <p>Flutter kicks are a great exercise for targeting the lower abs and building endurance in your core.</p>
+                <a href="https://youtu.be/ZB1SwBRVLCc?si=k1jcn70cvxNKiSP5" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Side Plank Card -->
+            <div class="card">
+                <img src="static/sideplank.webp" alt="Side Plank">
+                <h3>Side Plank</h3>
+                <p>This variation of the plank focuses on the obliques, helping to improve balance and strengthen your core.</p>
+                <a href="https://www.youtube.com/watch?v=K2VljzCC16g" target="_blank">Learn More</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
