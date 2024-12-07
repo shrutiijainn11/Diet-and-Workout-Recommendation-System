@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Categories</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: linear-gradient(to right, #ffffff, #e6e6e6);
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 0px 15px;
+            font-size: 15px;
+            color: white;
+            background: linear-gradient(to right, #a78128, #fed574);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .card-content a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Explore Diet Options</h1>
+    <div class="card-container">
+        <!-- Veg Diet Card -->
+        <div class="card">
+            <a href="{{ url_for('veg') }}">
+                <img src="static/veg.jpg" alt="Vegetarian Diet">
+                <div class="card-content">
+                    <h3>Veg Diet</h3>
+                </a>
+                <p>Discover healthy vegetarian meal plans and recipes.</p>
+            </div>
+        </div>
+
+        <!-- Non-Veg Diet Card -->
+        <div class="card">
+            <a href="{{ url_for('nonveg') }}">
+                <img src="static/nonveg.jpg" alt="Non-Vegetarian Diet">
+                <div class="card-content">
+                    <h3>Non-Veg Diet</h3>
+                </a>
+                <p>Explore high-protein non-vegetarian diet plans.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
