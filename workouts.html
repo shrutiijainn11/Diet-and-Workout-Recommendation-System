@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Categories</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: linear-gradient(to right, #ffffff, #e6e6e6);
+            width: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 0px 15px;
+            font-size: 15px;
+            color: white;
+            background: linear-gradient(to right, #a78128, #fed574);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .card-content a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Explore Workout Categories</h1>
+    <div class="card-container">
+        <!-- Basic Leg Workout -->
+        <div class="card">
+            <a href="{{ url_for('legs') }}">
+                <img src="static/leg.webp" alt="Basic Leg Workout">
+                <div class="card-content">
+                    <h3>Leg Workout</h3></a>
+                    <p>Strengthen your legs with targeted exercises.</p>
+                </div>
+        </div>
+
+        <!-- Basic Upper Body Workout -->
+        <div class="card">
+            <a href="{{ url_for('upperbody') }}">
+                <img src="static/upper.webp" alt="Basic Upper Body Workout">
+                <div class="card-content">
+                    <h3>Upper Body Workout</h3></a>
+                    <p>Enhance your upper body strength and tone.</p>
+                </div>
+        </div>
+
+        <!-- Basic Zumba -->
+        <div class="card">
+            <a href="{{ url_for('zumba') }}">
+                <img src="static/zumba.webp" alt="Basic Zumba">
+                <div class="card-content">
+                    <h3>Zumba</h3> </a>
+                    <p>Enjoy dance-based fitness for all levels.</p>
+                </div>
+        </div>
+
+        <!-- Basic Pilates -->
+        <div class="card">
+            <a href="{{ url_for('pilates') }}">
+                <img src="static/pilates.jpg" alt="Basic Pilates">
+                <div class="card-content">
+                    <h3>Pilates</h3> </a>
+                    <p>Improve flexibility and core strength with Pilates.</p>
+                </div>
+        </div>
+
+        <!-- Basic Stretch -->
+        <div class="card">
+            <a href="{{ url_for('yoga') }}">
+                <img src="static/yoga.jpg" alt="Basic Stretch">
+                <div class="card-content">
+                    <h3>Yoga</h3> </a>
+                    <p>Release tension with guided stretching routines.</p>
+                </div>
+        </div>
+
+        <!-- Basic Abs Workout -->
+        <div class="card">
+            <a href="{{ url_for('abs') }}">
+                <img src="static/abs.webp" alt="Basic Abs Workout">
+                <div class="card-content">
+                    <h3>Abs Workout</h3> </a>
+                    <p>Strengthen and tone your core muscles.</p>
+                </div>
+        </div>
+
+        <!-- Cardio -->
+        <div class="card">
+            <a href="{{ url_for('cardio') }}">
+                <img src="static/cardio.jpg" alt="Cardio Workout">
+                <div class="card-content">
+                    <h3>Cardio</h3> </a>
+                    <p>Keep Your Heart Strong and Your Mind Stronger.</p>
+                </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
