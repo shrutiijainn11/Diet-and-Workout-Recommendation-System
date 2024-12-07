@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardio Workouts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .workout-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(to right, #a78128, #fed574);
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+
+        .card .video-icon {
+            font-size: 2rem;
+            color: #ff7e5f;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .card .video-icon:hover {
+            color: #feb47b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animation-wrapper {
+            animation: fadeIn 1.5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container animation-wrapper">
+        <h2>Cardio Workouts: Boost Your Heart Health</h2>
+
+        <div class="workout-card">
+            <!-- Jumping Jacks Card -->
+            <div class="card">
+                <img src="static/jumpingjacks.webp" alt="Jumping Jacks">
+                <h3>Jumping Jacks</h3>
+                <p>Jumping jacks are a simple, effective full-body cardio exercise that gets your heart pumping and muscles working.</p>
+                <a href="https://youtu.be/iSSAk4XCsRA?si=74LsgDCHbIlgvcZR" target="_blank">Learn More</a>
+            </div>
+
+            <!-- High Knees Card -->
+            <div class="card">
+                <img src="static/highknees.jpg" alt="High Knees">
+                <h3>High Knees</h3>
+                <p>High knees increase your heart rate and engage your core, making them a great cardio move for fat burning.</p>
+                <a href="https://youtu.be/ZNDHivUg7vA?si=ZnZyxlkWdt21N7DD" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Burpees Card -->
+            <div class="card">
+                <img src="static/burpees.jpg" alt="Burpees">
+                <h3>Burpees</h3>
+                <p>Burpees are a full-body exercise that boosts cardiovascular fitness while also strengthening muscles.</p>
+                <a href="https://www.youtube.com/watch?v=TU8QYVW0gDU" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Jump Rope Card -->
+            <div class="card">
+                <img src="static/jumprope.webp" alt="Jump Rope">
+                <h3>Jump Rope</h3>
+                <p>Jump rope is an excellent cardio workout that improves coordination and burns calories quickly.</p>
+                <a href="https://www.youtube.com/watch?v=kDOGb9C5kp0" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Skater Jumps Card -->
+            <div class="card">
+                <img src="static/skaterjump.jpg" alt="Skater Jumps">
+                <h3>Skater Jumps</h3>
+                <p>Skater jumps are a plyometric cardio move that targets your legs and glutes while improving lateral movement.</p>
+                <a href="https://youtu.be/5gtLC5BgN7Q?si=TlX8joHy5eWy_xSH" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Sprinting in Place Card -->
+            <div class="card">
+                <img src="static/sprint.jpg" alt="Sprinting in Place">
+                <h3>Sprinting in Place</h3>
+                <p>Sprinting in place is an intense cardio exercise that gets your heart rate up and can be done anywhere.</p>
+                <a href="https://youtu.be/v7rjHmZRs28?si=CZOcB4rrMpDAl9dw" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Butt Kicks Card -->
+            <div class="card">
+                <img src="static/buttkicks.jpg" alt="Butt Kicks">
+                <h3>Butt Kicks</h3>
+                <p>Butt kicks are a great cardio move that activates your hamstrings and glutes while increasing heart rate.</p>
+                <a href="https://youtu.be/e4cnI7eVKRw?si=z1BkZg_eU4TQbJc2" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Side-to-Side Jumps Card -->
+            <div class="card">
+                <img src="static/sidetosidejumps.jpg" alt="Side-to-Side Jumps">
+                <h3>Side-to-Side Jumps</h3>
+                <p>This lateral jump exercise works on agility and boosts cardiovascular fitness by working the legs and core.</p>
+                <a href="https://youtu.be/oHq-TC9TPpI?si=FLbfJzWM_YggDi64" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
