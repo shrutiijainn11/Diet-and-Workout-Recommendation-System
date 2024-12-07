@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Vegetarian Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .recipe-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(to right, #a78128, #fed574);
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Non-Vegetarian Recipes</h2>
+
+        <div class="recipe-card">
+            <!-- Grilled Chicken Salad -->
+            <div class="card">
+                <img src="static/salad.jpeg" alt="Grilled Chicken Salad">
+                <h3>Grilled Chicken Salad</h3>
+                <p>Lean protein-packed grilled chicken with fresh greens and a zesty dressing.</p>
+                <a href="https://youtube.com/shorts/LR_ytRmLNh0?si=oqmockKcDpsCvUyt" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Moroccan Chicken Tagine -->
+            <div class="card">
+                <img src="static/tagine.jpeg" alt="Moroccan Chicken Tagine">
+                <h3>Moroccan Chicken Tagine</h3>
+                <p>A flavorful slow-cooked chicken dish with warm spices, apricots, and almonds.</p>
+                <a href="https://youtu.be/R8fyTivC6lM?si=BjG1ygNgHVw9lIfz" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Teriyaki Salmon -->
+            <div class="card">
+                <img src="static/salmon.jpeg" alt="Teriyaki Salmon">
+                <h3>Teriyaki Salmon</h3>
+                <p>A quick and healthy Japanese-inspired salmon dish with teriyaki glaze.</p>
+                <a href="https://youtube.com/shorts/vgCGqcjnyYY?si=YBiiWxP_qTsKz-6p" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Mexican Chicken Fajitas -->
+            <div class="card">
+                <img src="static/fajita.jpeg" alt="Chicken Fajitas">
+                <h3>Mexican Chicken Fajitas</h3>
+                <p>Sizzling chicken strips with bell peppers, served with tortillas.</p>
+                <a href="https://youtube.com/shorts/RxPCFXSuAZI?si=WoocL6njO6RZ8Ubc" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Mediterranean Grilled Fish -->
+            <div class="card">
+                <img src="static/fish.jpg" alt="Grilled Fish">
+                <h3>Mediterranean Grilled Fish</h3>
+                <p>Fresh fish fillet grilled with herbs and olive oil, served with vegetables.</p>
+                <a href="https://youtube.com/shorts/Xwll2kmkGnM?si=opI1OeN7NMb3m2nm" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Indian Egg Curry -->
+            <div class="card">
+                <img src="static/eggcurry.jpeg" alt="Indian Egg Curry">
+                <h3>Indian Egg Curry</h3>
+                <p>Hard-boiled eggs simmered in a flavorful tomato-onion gravy with aromatic spices.</p>
+                <a href="https://youtube.com/shorts/Cd5y3j3fW2E?si=4lbYK8lfQhmjub3I" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Thai Basil Chicken -->
+            <div class="card">
+                <img src="static/basil.jpeg" alt="Thai Basil Chicken">
+                <h3>Thai Basil Chicken</h3>
+                <p>A quick and healthy stir-fry made with chicken, garlic, chilies, and fragrant Thai basil leaves.</p>
+                <a href="https://youtube.com/shorts/B2MXxOtv_EI?si=yaC3bBPQVs-CVYSN" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Garlic Butter Shrimp -->
+            <div class="card">
+                <img src="static/shrimp.jpg" alt="Garlic Butter Shrimp">
+                <h3>Garlic Butter Shrimp</h3>
+                <p>Succulent shrimp cooked in a rich garlic butter sauce, perfect for a light meal or appetizer.</p>
+                <a href="https://youtube.com/shorts/W0LgNsfXc3A?si=SbGHF3VQSKxAszlP" target="_blank">Learn More</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
