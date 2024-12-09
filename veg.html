@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .recipe-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(to right, #a78128, #fed574);
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Vegetarian Recipes</h2>
+
+        <div class="recipe-card">
+            <!-- Mediterranean Veggie Bowl -->
+            <div class="card">
+                <img src="static/mediterranean.jpg" alt="Mediterranean Veggie Bowl">
+                <h3>Mediterranean Veggie Bowl</h3>
+                <p>Delicious and healthy bowl with quinoa, chickpeas, and roasted vegetables.</p>
+                <a href="https://youtube.com/shorts/AKjMkaeTL7k?si=S9cGxqD3LkVfvr6R" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Indian Palak Paneer -->
+            <div class="card">
+                <img src="static/palakpaneer.jpg" alt="Palak Paneer">
+                <h3>Indian Palak Paneer</h3>
+                <p>A classic Indian dish made with spinach and paneer, rich in nutrients and flavor.</p>
+                <a href="https://youtube.com/shorts/vW36VvkRJiw?si=k02v5Ptsg7YmuDkt" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Thai Green Curry -->
+            <div class="card">
+                <img src="static/thaicurry.jpg" alt="Thai Green Curry">
+                <h3>Thai Green Curry</h3>
+                <p>Fragrant curry with tofu, vegetables, and coconut milk, served with jasmine rice.</p>
+                <a href="https://youtube.com/shorts/UT27rBZWYD4?si=DQuV4RMkBEl06bm8" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Mexican Veggie Tacos -->
+            <div class="card">
+                <img src="static/tacos.jpeg" alt="Veggie Tacos">
+                <h3>Mexican Veggie Tacos</h3>
+                <p>Loaded with beans, avocado, and veggies, these tacos are a crowd-pleaser.</p>
+                <a href="https://youtube.com/shorts/fQeeJXvQNVI?si=6OQLpW2b8cTLE3bL" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Millet Upma -->
+            <div class="card">
+                <img src="static/upma.jpg" alt="Millet Upma">
+                <h3>Millet Upma</h3>
+                <p>A nutritious South Indian dish made with millets, vegetables, and mild spices.</p>
+                <a href="https://youtube.com/shorts/O5JpqkqTA6U?si=3cUt7RGMwVi-2yUW" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Moroccan Lentil Soup -->
+            <div class="card">
+                <img src="static/soup.jpg" alt="Moroccan Lentil Soup">
+                <h3>Moroccan Lentil Soup</h3>
+                <p>A hearty and flavorful soup made with red lentils, tomatoes, and warm spices.</p>
+                <a href="https://youtube.com/shorts/0CGRTuYnT4A?si=tsAhxIAbjDfgbbKX" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Spinach and Ricotta Ravioli -->
+            <div class="card">
+                <img src="static/ravioli.jpg" alt="Spinach and Ricotta Ravioli">
+                <h3>Spinach and Ricotta Ravioli</h3>
+                <p>Delicate pasta stuffed with spinach and creamy ricotta, served with marinara sauce.</p>
+                <a href="https://youtube.com/shorts/8JAoQtnwL8Y?si=1LwDO_gTOSH8y4Qk" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Beetroot Tikki -->
+            <div class="card">
+                <img src="static/tikki.jpg" alt="Beetroot Tikki">
+                <h3>Beetroot Tikki</h3>
+                <p>A vibrant, nutritious snack made with grated beetroot, boiled potatoes, and aromatic spices.</p>
+                <a href="https://youtube.com/shorts/wqh_6Yh5qOY?si=ag8MtYXzAEGqEafv" target="_blank">Learn More</a>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+
+</html>
