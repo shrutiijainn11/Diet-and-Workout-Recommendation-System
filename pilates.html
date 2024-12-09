@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilates Workouts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #2f2b2a, #5c5048);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .workout-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: linear-gradient(to right, #a78128, #fed574);
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(to right, #c6901e, #cb910b);
+        }
+
+        .card .video-icon {
+            font-size: 2rem;
+            color: #ff7e5f;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .card .video-icon:hover {
+            color: #feb47b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animation-wrapper {
+            animation: fadeIn 1.5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container animation-wrapper">
+        <h2>Pilates Workouts: Strengthen and Align</h2>
+
+        <div class="workout-card">
+            <!-- Pilates Card 1 -->
+            <div class="card">
+                <img src="static/pilatesbasics.jpg" alt="Pilates Basics">
+                <h3>Pilates Basics</h3>
+                <p>Get started with basic Pilates movements. This routine will guide you through foundational exercises to improve flexibility and core strength.</p>
+                <a href="https://youtu.be/aIafCufiSX4?si=5gvqMWneiZS49I1-" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Beginner Pilates Card -->
+            <div class="card">
+                <img src="static/pilatesbeginners.jpg" alt="Beginner Pilates">
+                <h3>Beginner Pilates Routine</h3>
+                <p>This Pilates workout is perfect for beginners, focusing on gentle movements to build strength and flexibility at home.</p>
+                <a href="https://youtu.be/TbYkJXqdUP0?si=V17T54rwJTs1YlHy" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Pilates Core Card -->
+            <div class="card">
+                <img src="static/pilatescore.avif" alt="Core Pilates">
+                <h3>Pilates for Core Strength</h3>
+                <p>This Pilates workout focuses on strengthening your core. It helps improve posture and balance while toning the abdominal muscles.</p>
+                <a href="https://youtu.be/U5LwQW_IQOc?si=YfM9S7IOZe1yxFTH" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Pilates Full Body Card -->
+            <div class="card">
+                <img src="static/pilatesfullbody.jpg" alt="Full Body Pilates">
+                <h3>Full Body Pilates Workout</h3>
+                <p>This full-body Pilates routine targets all major muscle groups, helping to tone, stretch, and strengthen your body.</p>
+                <a href="https://youtu.be/ySnQGJrL-mc?si=8ugsQwSTfOIb17kW" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Pilates for Flexibility Card -->
+            <div class="card">
+                <img src="static/pilatesflexibility.jpg" alt="Pilates for Flexibility">
+                <h3>Pilates for Flexibility</h3>
+                <p>This Pilates session focuses on improving flexibility, especially in your hamstrings, back, and shoulders.</p>
+                <a href="https://youtu.be/S8Q894UuMLw?si=bSJLwvE1rVhh_kFK" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Pilates for Strength Card -->
+            <div class="card">
+                <img src="static/pilatesstrength.jpg" alt="Pilates for Strength">
+                <h3>Pilates for Strength</h3>
+                <p>Build strength with a Pilates workout that focuses on resistance, helping to tone and sculpt muscles while improving posture.</p>
+                <a href="https://youtu.be/GGw3J5N2Jm0?si=bi4sA6LGw5jSXeug" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Pilates for Lower Body Card -->
+            <div class="card">
+                <img src="static/pilateslowerbody.jpg" alt="Pilates for Lower Body">
+                <h3>Pilates for Lower Body</h3>
+                <p>This lower-body Pilates routine focuses on toning the legs and glutes, improving flexibility and strength for your lower body.</p>
+                <a href="https://youtu.be/AsC-Vdxaxho?si=-4reviWlOj6zV-SJ" target="_blank">Learn More</a>
+            </div>
+
+            <!-- Pilates for Posture Card -->
+            <div class="card">
+                <img src="static/pilatesposture.avif" alt="Pilates for Posture">
+                <h3>Pilates for Posture</h3>
+                <p>Improve your posture with this Pilates routine that focuses on strengthening the back and core, perfect for sitting at a desk all day.</p>
+                <a href="https://youtu.be/Vfa__OEQhZg?si=uQZGgCUJ7zDmUWC2" target="_blank">Learn More</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
