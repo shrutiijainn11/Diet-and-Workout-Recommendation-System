@@ -1,0 +1,406 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: url('bg.webp') no-repeat center center fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffffc7;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+.card {
+    background: linear-gradient(to right, #fcdd94, #f3e1b9);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.card-header img {
+    width: 30px;
+    height: 30px;
+}
+
+form label {
+    font-weight: bold;
+    color: #292929;
+}
+
+form input,
+form select,
+form textarea {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff7e5f;
+    box-shadow: 0 0 8px rgba(255, 126, 95, 0.5);
+}
+
+form button {
+    width: 100%;
+    background: linear-gradient(to right, #a78128, #fed574);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background: linear-gradient(to right, #513904, #cb910b);
+    transform: scale(1.05);
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(to right, #a78128, #fed574);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #513904, #cb910b);
+    transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Navbar container */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background: linear-gradient(to right, #a78128, #fed574);
+position: sticky;
+top: 0;
+z-index: 10;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.navbar .logo a {
+text-decoration: none;
+font-size: 1.8rem;
+font-weight: bold;
+color: white;
+text-transform: uppercase;
+letter-spacing: 2px;
+animation: slideIn 1s ease;
+}
+
+/* Navbar links */
+.nav-links {
+display: flex;
+list-style: none;
+}
+
+.nav-links li {
+margin: 0 15px;
+}
+
+.nav-links a {
+text-decoration: none;
+font-size: 1rem;
+font-weight: 500;
+color: white;
+transition: color 0.3s ease, transform 0.3s ease;
+position: relative;
+}
+
+.nav-links a::after {
+content: '';
+position: absolute;
+width: 0%;
+height: 2px;
+background-color: white;
+bottom: -5px;
+left: 0;
+transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+color: #292929;
+transform: scale(1.1);
+}
+
+.nav-links a:hover::after {
+width: 100%;
+}
+
+/* Responsive menu toggle */
+.menu-toggle {
+display: none;
+cursor: pointer;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.menu-toggle .bar {
+width: 25px;
+height: 3px;
+background-color: white;
+margin: 3px;
+border-radius: 2px;
+transition: all 0.3s ease;
+}
+
+/* Keyframes for animation */
+@keyframes slideIn {
+from {
+transform: translateX(-50px);
+opacity: 0;
+}
+to {
+transform: translateX(0);
+opacity: 1;
+}
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+.nav-links {
+position: absolute;
+top: 100%;
+right: 0;
+background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+flex-direction: column;
+align-items: flex-start;
+width: 100%;
+transform: translateY(-200%);
+transition: transform 0.5s ease;
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links li {
+margin: 15px 0;
+}
+
+.nav-links.active {
+transform: translateY(0);
+}
+
+.menu-toggle {
+display: flex;
+}
+}
+/* Carousel Container */
+.carousel {
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Slide Container */
+.carousel-slide {
+display: flex;
+transition: transform 1s ease-in-out;
+width: 300%;
+}
+
+/* Individual Slide */
+.carousel-item {
+min-width: 100%;
+height: 70vh;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+position: relative;
+}
+
+/* Text Overlay */
+.carousel-text {
+text-align: center;
+background: rgba(0, 0, 0, 0.5);
+padding: 20px 40px;
+border-radius: 10px;
+animation: fadeIn 1.5s ease-out;
+}
+
+.carousel-text h1 {
+font-size: 3rem;
+margin: 0 0 10px;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.carousel-text p {
+font-size: 1.2rem;
+margin: 0;
+font-weight: 300;
+}
+
+/* Navigation Buttons */
+.carousel-navigation {
+position: absolute;
+width: 100%;
+top: 50%;
+transform: translateY(-50%);
+display: flex;
+justify-content: space-between;
+padding: 0 20px;
+z-index: 10;
+}
+
+.carousel-navigation button {
+background: rgba(0, 0, 0, 0);
+color: white;
+border: none;
+font-size: 2rem;
+cursor: pointer;
+padding: 10px 20px;
+border-radius: 50%;
+transition: background 0.3s ease;
+}
+
+
+/* Dots Indicator */
+.carousel-indicators {
+position: absolute;
+bottom: 20px;
+display: flex;
+justify-content: center;
+width: 100%;
+z-index: 10;
+}
+
+.carousel-indicators .dot {
+height: 12px;
+width: 12px;
+margin: 0 5px;
+background: rgba(255, 255, 255, 0.7);
+border-radius: 50%;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.carousel-indicators .dot.active,
+.carousel-indicators .dot:hover {
+background: rgba(255, 255, 255, 1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(-20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+/* Arrow Container */
+.arrow-container {
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Downward Arrow */
+.arrow {
+width: 50px;
+height: 50px;
+border-left: 10px solid white;
+border-bottom: 10px solid white;
+transform: rotate(-45deg);
+animation: bounce 1.5s infinite ease-in-out;
+cursor: pointer;
+}
+
+/* Arrow Animation */
+@keyframes bounce {
+0%, 100% {
+transform: translateY(0) rotate(-45deg);
+}
+50% {
+transform: translateY(10px) rotate(-45deg);
+}
+}
